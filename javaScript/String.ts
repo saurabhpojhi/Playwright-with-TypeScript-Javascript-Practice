@@ -96,9 +96,9 @@ console.log("Replacing string:", str.replace("Typescript","World")); // Hello Wo
   
   num=10;
   let res1= num+5;
-  console.log(res1); //15
+  console.log(res1); //15 
   console.log(num); // 10
-  
+
   
   
 
