@@ -149,7 +149,7 @@ for(let i in book3){
 
  let person1=new Person(12111,'john','kendy');
    person1.getDetails();
-console.log(person1.getDetails());
+console.log(person1.getDetails()); 
 
 
    let person2=new Person(2222,'David','D');
@@ -158,4 +158,5 @@ console.log(person2.getDetails());
 
    let person3=new Person(3333,'Three','T');
    person2.getDetails();
-console.log(person3.getDetails());
+console.log(person3.getDetails()); 
+  
