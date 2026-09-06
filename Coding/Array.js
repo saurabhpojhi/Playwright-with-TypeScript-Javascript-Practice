@@ -81,5 +81,6 @@ console.log(small);
 
       console.log(largestMax); 
       console.log(smallmin);
-
-// Q5 -  Find Second Largest Element 
+      console.log(smallmin);
+     /// test
+// Q5 -  Find Second Largest Element   --- 
