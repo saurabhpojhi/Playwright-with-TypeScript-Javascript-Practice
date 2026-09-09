@@ -8,4 +8,4 @@ test('practice playwrgiht locator', async({page})=>{
     
 
 
-}); 
+});

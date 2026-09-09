@@ -8,4 +8,4 @@ test('xpath on playwrgihttest ', async({page}) =>{
            const doc= page.locator("//*[normalize-space()='Documentation']");
            await expect(doc).toBeVisible();
 
-})
+});

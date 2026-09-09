@@ -9,6 +9,10 @@ test("title",()=>{
 
 }); */
 
+     test("title2",async({page})=>{
+           await page.goto("https://www.google.com/");
+
+     });
 test("verify the patge title", async ({page})=>{
           await  page.goto("https://www.google.com/");
      //.  await    const title : String=page.title();
