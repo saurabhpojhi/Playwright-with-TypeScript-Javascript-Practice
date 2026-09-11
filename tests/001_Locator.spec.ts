@@ -31,5 +31,24 @@ test("Playwright locator", async({page})=>{
                   const username = page.getByPlaceholder("e.g., automation_user");
                   await expect(username).toBeVisible();
                   await  username.fill("test@gmail.com"); 
+               
+                  // 5. GetByAltText() - locate image by alt attrubute text 
+                 // identifies images based on alt attribute 
+                 // use this locatoer wehn your element support alt text such as image area lements 
+                 const imgtext1 = page.getByAltText("Playwright automation logo");
+                 const imgtext2 = page.getByAltText("Coffee and laptop");
+                 await expect(imgtext1).toBeVisible();
+                 await expect(imgtext2).toBeVisible();
+                
+                 // 6. GetByTitle() - locate element by title attribute
+                 // when to use - when your element support title attribute
+                  // const titlelocator = page.getByTitle("Media & Title ");
+                    //  await expect(titlelocator).toBeVisible();
+                    
+                      // 7. GetByTestId() - locate element by data-testid attribute
+                      // when to use - when text or role-basd locators are unsable or not suitable
+                            //  const testId = page.getByTestId("Review locator strategies");
+                            //  await expect(testId).toBeVisible();
 
-        });
+      
+                     });
