@@ -1,0 +1,60 @@
+/*
+What is an iFrame?
+------------------
+An iframe (Inline Frame) is an HTML element that allows one web page 
+to be embedded inside another web page.
+
+tag:   frame,  iframe
+  frameset  --> contains multiple frames
+
+Examples:
+- YouTube videos
+- Payment gateways
+- Advertisements
+- External web pages
+
+page.frame(locator)  ---> Not auto waited , not returns promise
+page.frameLocator(locator)  --- auto waited , await is not need (special case)
+page.frames()  -- retuns all the frames
+
+*/
+
+/// https://ui.vision/demo/webtest/frames/
+
+import {test, expect} from '@playwright/test';
+
+   test("handles frames", async ({page})=>{
+         
+    // // Open the Frames demo application
+          await page.goto("https://ui.vision/demo/webtest/frames/");
+
+//Get all frames available on the page
+       const frames = page.frames();
+       console.log("Number of frame", frames.length);
+       
+       // verify total number of frame
+       expect(frames.length).toBe(7);
+       
+       // Approach 1 - page.frame(locator) - recommneded
+       //page.frame() returns a Frame object. It doesn't wait, can return null.
+    //After getting the frame object, we can locate and interact with elements inside that frame.
+
+    const frame1 =    page.frame({url:"https://ui.vision/demo/webtest/frames/frame_1"}); // way 1
+      //page.locator('frameset').locator('frame').nth(0); // way 2
+      if(frame1){
+            await frame1.locator("input[name='mytext1']").fill("Hello")
+    }
+    else{
+         console.log("Frame 1 is not available.");
+    }
+
+    // Approach 2: Using frameLocator()
+    // frameLocator() is the recommended approach because it directly
+    // locates elements inside an iframe without creating a Frame object.
+ 
+    const txtName=page.frameLocator("frame[src='frame_1.html']").locator("input[name='mytext1']")
+    await txtName.fill("John")
+
+
+
+   })
