@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","563","@P2 @Regression demowebshop search test","chromium","2026-09-23","skipped","2026-09-23","demowebshop User Login Tests","Reporting_tests.spec.ts","",""
+"","5245","@P2 @Regression title test","chromium","2026-09-23","passed","2026-09-23","demowebshop Home Page Tests","Reporting_tests.spec.ts","",""
+"","6775","@P1 @Sanity Login test with valid credentials","chromium","2026-09-23","passed","2026-09-23","demowebshop User Login Tests","Reporting_tests.spec.ts","",""
+"","15445","@P1 @Sanity demoblaze Login test","chromium","2026-09-23","failed","2026-09-23","demowebshop User Login Tests","Reporting_tests.spec.ts","",""
+"","7824","@P2 @Regression logotest","chromium","2026-09-23","passed","2026-09-23","demowebshop Home Page Tests","Reporting_tests.spec.ts","",""
+"","6375","@P1 @Sanity Login test with in-valid credentials","chromium","2026-09-23","passed","2026-09-23","demowebshop User Login Tests","Reporting_tests.spec.ts","",""
