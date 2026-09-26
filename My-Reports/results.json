@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\PlaywrightInterviewPractice\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/Reporting_tests.spec.ts",
+      "tests/POM_test_demo.spec.ts",
       "--headed",
       "--project=chromium"
     ],
@@ -80,25 +80,22 @@
   },
   "suites": [
     {
-      "title": "Reporting_tests.spec.ts",
-      "file": "Reporting_tests.spec.ts",
+      "title": "POM_test_demo.spec.ts",
+      "file": "POM_test_demo.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "demowebshop Home Page Tests",
-          "file": "Reporting_tests.spec.ts",
-          "line": 4,
+          "title": "Demoblaze Tests",
+          "file": "POM_test_demo.spec.ts",
+          "line": 10,
           "column": 6,
           "specs": [
             {
-              "title": "@P2 @Regression logotest",
+              "title": "User can sign up with a new account",
               "ok": true,
-              "tags": [
-                "P2",
-                "Regression"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
@@ -111,12 +108,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7824,
+                      "duration": 10886,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T14:44:50.792Z",
+                      "startTime": "2026-09-26T11:08:25.673Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -124,228 +121,15 @@
                   "status": "expected"
                 }
               ],
-              "id": "1aa7fd7168da4404e9ed-80f329c367cefa70400d",
-              "file": "Reporting_tests.spec.ts",
-              "line": 6,
-              "column": 9
+              "id": "47937a59d7fe71b3d738-3cb4ab846a32b9364845",
+              "file": "POM_test_demo.spec.ts",
+              "line": 25,
+              "column": 7
             },
             {
-              "title": "@P2 @Regression title test",
-              "ok": true,
-              "tags": [
-                "P2",
-                "Regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5245,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-23T14:45:04.857Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1aa7fd7168da4404e9ed-e5013b06ed82825b7ea3",
-              "file": "Reporting_tests.spec.ts",
-              "line": 11,
-              "column": 9
-            }
-          ]
-        },
-        {
-          "title": "demowebshop User Login Tests",
-          "file": "Reporting_tests.spec.ts",
-          "line": 19,
-          "column": 6,
-          "specs": [
-            {
-              "title": "@P1 @Sanity Login test with in-valid credentials",
-              "ok": true,
-              "tags": [
-                "P1",
-                "Sanity"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6375,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Open Login Page",
-                          "duration": 3351
-                        },
-                        {
-                          "title": "Enter Login Credentials",
-                          "duration": 262
-                        },
-                        {
-                          "title": "Click Login Button",
-                          "duration": 660
-                        },
-                        {
-                          "title": "Verify UnSuccessful Login",
-                          "duration": 234
-                        }
-                      ],
-                      "startTime": "2026-09-23T14:45:10.504Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1aa7fd7168da4404e9ed-eafd38f2d183d03e6e47",
-              "file": "Reporting_tests.spec.ts",
-              "line": 21,
-              "column": 9
-            },
-            {
-              "title": "@P1 @Sanity Login test with valid credentials",
-              "ok": true,
-              "tags": [
-                "P1",
-                "Sanity"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6775,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Open Login Page",
-                          "duration": 3329
-                        },
-                        {
-                          "title": "Enter Login Credentials",
-                          "duration": 195
-                        },
-                        {
-                          "title": "Click Login Button",
-                          "duration": 977
-                        },
-                        {
-                          "title": "Verify Successful Login",
-                          "duration": 594
-                        }
-                      ],
-                      "startTime": "2026-09-23T14:45:17.261Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1aa7fd7168da4404e9ed-fe6f3762a4e9b064b9a9",
-              "file": "Reporting_tests.spec.ts",
-              "line": 44,
-              "column": 9
-            },
-            {
-              "title": "@P2 @Regression demowebshop search test",
-              "ok": true,
-              "tags": [
-                "P2",
-                "Regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts",
-                        "line": 66,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-23T14:45:24.494Z",
-                      "annotations": [
-                        {
-                          "type": "skip",
-                          "location": {
-                            "file": "C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts",
-                            "line": 66,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "1aa7fd7168da4404e9ed-ef026e517eb1a9fe1a91",
-              "file": "Reporting_tests.spec.ts",
-              "line": 66,
-              "column": 10
-            },
-            {
-              "title": "@P1 @Sanity demoblaze Login test",
+              "title": "User can login, add a product to cart and verify it",
               "ok": false,
-              "tags": [
-                "P1",
-                "Sanity"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
@@ -358,58 +142,92 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 15445,
+                      "duration": 9813,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n\n    at C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts:80:67",
+                        "message": "Error: Product \"Nexus 6\" not found on the page",
+                        "stack": "Error: Product \"Nexus 6\" not found on the page\n    at HomePage.selectProductByName (C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts:50:11)\n    at HomePage.addProductToCart (C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts:26:5)\n    at C:\\PlaywrightInterviewPractice\\tests\\POM_test_demo.spec.ts:47:5",
                         "location": {
-                          "file": "C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts",
-                          "column": 67,
-                          "line": 80
+                          "file": "C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts",
+                          "column": 11,
+                          "line": 50
                         },
-                        "snippet": "\u001b[0m \u001b[90m 78 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#loginpassword'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'test@123X'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log out'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nameofuser'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Welcome pavanol'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     }\n \u001b[90m 49 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Product \"${productName}\" not found on the page`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\n \u001b[90m 52 |\u001b[39m\n \u001b[90m 53 |\u001b[39m   \u001b[90m// Category filtering\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts",
-                            "column": 67,
-                            "line": 80
+                            "file": "C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts",
+                            "column": 11,
+                            "line": 50
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 78 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#loginpassword'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'test@123X'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log out'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nameofuser'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Welcome pavanol'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts:80:67\u001b[22m"
+                          "message": "Error: Product \"Nexus 6\" not found on the page\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     }\n \u001b[90m 49 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Product \"${productName}\" not found on the page`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 51 |\u001b[39m   }\n \u001b[90m 52 |\u001b[39m\n \u001b[90m 53 |\u001b[39m   \u001b[90m// Category filtering\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.selectProductByName (C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts:50:11)\u001b[22m\n\u001b[2m    at HomePage.addProductToCart (C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts:26:5)\u001b[22m\n\u001b[2m    at C:\\PlaywrightInterviewPractice\\tests\\POM_test_demo.spec.ts:47:5\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T14:45:24.669Z",
+                      "startTime": "2026-09-26T11:08:41.663Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\PlaywrightInterviewPractice\\test-results\\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\\test-failed-1.png"
+                          "path": "C:\\PlaywrightInterviewPractice\\test-results\\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\\test-failed-1.png"
                         },
                         {
                           "name": "error-context",
                           "contentType": "text/markdown",
-                          "path": "C:\\PlaywrightInterviewPractice\\test-results\\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\\error-context.md"
+                          "path": "C:\\PlaywrightInterviewPractice\\test-results\\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\\error-context.md"
                         }
                       ],
                       "errorLocation": {
-                        "file": "C:\\PlaywrightInterviewPractice\\tests\\Reporting_tests.spec.ts",
-                        "column": 67,
-                        "line": 80
+                        "file": "C:\\PlaywrightInterviewPractice\\pages\\HomePage.ts",
+                        "column": 11,
+                        "line": 50
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "1aa7fd7168da4404e9ed-84435d78a4dc8a24b3a6",
-              "file": "Reporting_tests.spec.ts",
-              "line": 74,
-              "column": 9
+              "id": "47937a59d7fe71b3d738-5205181e7ef59b3d8a32",
+              "file": "POM_test_demo.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "User can remove product from cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-26T11:08:56.040Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "47937a59d7fe71b3d738-a176ee9f97fad829c5aa",
+              "file": "POM_test_demo.spec.ts",
+              "line": 59,
+              "column": 7
             }
           ]
         }
@@ -418,9 +236,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-23T14:44:48.583Z",
-    "duration": 53827.68,
-    "expected": 4,
+    "startTime": "2026-09-26T11:08:20.007Z",
+    "duration": 37240.6,
+    "expected": 1,
     "skipped": 1,
     "unexpected": 1,
     "flaky": 0

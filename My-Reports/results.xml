@@ -1,60 +1,44 @@
-<testsuites id="" name="" tests="6" failures="1" skipped="1" errors="0" time="53.82768">
-<testsuite name="Reporting_tests.spec.ts" timestamp="2026-09-23T14:44:48.841Z" hostname="chromium" tests="6" failures="1" skipped="1" time="41.664" errors="0">
-<testcase name="demowebshop Home Page Tests › @P2 @Regression logotest" classname="Reporting_tests.spec.ts" time="7.824">
+<testsuites id="" name="" tests="3" failures="0" skipped="1" errors="1" time="37.2406">
+<testsuite name="POM_test_demo.spec.ts" timestamp="2026-09-26T11:08:20.786Z" hostname="chromium" tests="3" failures="0" skipped="1" time="20.699" errors="1">
+<testcase name="Demoblaze Tests › User can sign up with a new account" classname="POM_test_demo.spec.ts" time="10.886">
 </testcase>
-<testcase name="demowebshop Home Page Tests › @P2 @Regression title test" classname="Reporting_tests.spec.ts" time="5.245">
-</testcase>
-<testcase name="demowebshop User Login Tests › @P1 @Sanity Login test with in-valid credentials" classname="Reporting_tests.spec.ts" time="6.375">
-</testcase>
-<testcase name="demowebshop User Login Tests › @P1 @Sanity Login test with valid credentials" classname="Reporting_tests.spec.ts" time="6.775">
-</testcase>
-<testcase name="demowebshop User Login Tests › @P2 @Regression demowebshop search test" classname="Reporting_tests.spec.ts">
-<properties>
-<property name="skip" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-<testcase name="demowebshop User Login Tests › @P1 @Sanity demoblaze Login test" classname="Reporting_tests.spec.ts" time="15.445">
+<testcase name="Demoblaze Tests › User can login, add a product to cart and verify it" classname="POM_test_demo.spec.ts" time="9.813">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-results\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-results\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\error-context.md]]
+[[ATTACHMENT|..\test-results\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\error-context.md]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › Reporting_tests.spec.ts:74:9 › demowebshop User Login Tests › @P1 @Sanity demoblaze Login test 
+<error message="Product &quot;Nexus 6&quot; not found on the page" type="Error">
+<![CDATA[  [chromium] › POM_test_demo.spec.ts:36:7 › Demoblaze Tests › User can login, add a product to cart and verify it 
 
-    Error: expect(locator).toBeVisible() failed
+    Error: Product "Nexus 6" not found on the page
 
-    Locator: getByRole('link', { name: 'Log out' })
-    Expected: visible
-    Timeout: 10000ms
-    Error: element(s) not found
+       at ..\pages\HomePage.ts:50
 
-    Call log:
-      - Expect "toBeVisible" with timeout 10000ms
-      - waiting for getByRole('link', { name: 'Log out' })
-
-
-      78 |         await page.locator('#loginpassword').fill('test@123X');
-      79 |         await page.getByRole('button', { name: 'Log in' }).click();
-    > 80 |         await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
-         |                                                                   ^
-      81 |         await expect(page.locator('#nameofuser')).toContainText('Welcome pavanol');
-      82 |
-      83 |     });
-        at C:\PlaywrightInterviewPractice\tests\Reporting_tests.spec.ts:80:67
+      48 |     }
+      49 |     
+    > 50 |     throw new Error(`Product "${productName}" not found on the page`);
+         |           ^
+      51 |   }
+      52 |
+      53 |   // Category filtering
+        at HomePage.selectProductByName (C:\PlaywrightInterviewPractice\pages\HomePage.ts:50:11)
+        at HomePage.addProductToCart (C:\PlaywrightInterviewPractice\pages\HomePage.ts:26:5)
+        at C:\PlaywrightInterviewPractice\tests\POM_test_demo.spec.ts:47:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\test-failed-1.png
+    ..\test-results\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-results\Reporting_tests-demowebsho-ea61b-Sanity-demoblaze-Login-test-chromium\error-context.md
+    Error Context: ..\test-results\POM_test_demo-Demoblaze-Te-1b7b2-oduct-to-cart-and-verify-it-chromium\error-context.md
 ]]>
-</failure>
+</error>
+</testcase>
+<testcase name="Demoblaze Tests › User can remove product from cart" classname="POM_test_demo.spec.ts">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>
